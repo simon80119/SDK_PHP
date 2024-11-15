@@ -47,7 +47,8 @@ class CurlService implements HttpClientInterface
         curl_setopt($ch, CURLOPT_POST, true);
         curl_setopt($ch, CURLOPT_POSTFIELDS, $request);
         if (($rs = curl_exec($ch)) === false) {
-            throw new RtnException(108);
+            //throw new RtnException(108);
+            throw new \Exception("curl error:" . curl_error($ch));
         }
         curl_close($ch);
         return $rs;
