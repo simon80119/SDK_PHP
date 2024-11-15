@@ -1,5 +1,5 @@
 {
-    "name": "ecpay/sdk",
+    "name": "simon801109/ecpay-sdk",
     "description": "ECPay SDK",
     "type": "library",
     "require": {
